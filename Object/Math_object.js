@@ -20,7 +20,7 @@ var pi = Math.PI
 // console.log(Math.floor(7.000000000))
 // console.log(Math.floor(8.999999999))
 
-// Random - generate a number > 0 and < 1 
+// Random - generate a number >= 0 and < 1 
 // each time it is used 
 console.log(Math.random());
 console.log(Math.floor(Math.random() * 100)) 
