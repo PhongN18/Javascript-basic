@@ -1,35 +1,11 @@
-// var courses = [
-//     {
-//         id: 1,
-//         name: 'Javascript',
-//         coin: 250,
-//     },
-//     {
-//         id: 2,
-//         name: 'HTML, CSS',
-//         coin: 0,
-//     },
-//     {
-//         id: 3,
-//         name: 'Ruby',
-//         coin: 0,
-//     },
-//     {
-//         id: 4,
-//         name: 'PHP',
-//         coin: 400,
-//     },
-//     {
-//         id: 5,
-//         name: 'ReactJS',
-//         coin: 500,
-//     },
-//     {
-//         id: 6,
-//         name: 'Ruby',
-//         coin: 120,
-//     },
-// ]
+var courses = [
+    { id: 1, name: 'Javascript', coin: 250 },
+    { id: 2, name: 'HTML, CSS', coin: 0 },
+    { id: 3, name: 'Ruby', coin: 0 },
+    { id: 4, name: 'PHP', coin: 400 },
+    { id: 5, name: 'ReactJS', coin: 500 },
+    { id: 6, name: 'Ruby', coin: 120 },
+]
 
 // courses.forEach(function (course, index) {
 //     console.log(index, course)
@@ -37,7 +13,7 @@
 
 // var free = courses.every(function (course, index) {
 //     console.log(index) 
-//     return course.coin < 500;
+//     return course.coin < 300;
 //     // check if the statement is true for every elements in array 
 // })
 // console.log(free)
@@ -220,10 +196,10 @@
 // console.log(title.includes('string', 15)) // false
 
 // Array
-var courses = ['Java', 'PHP', 'Ruby', 'HTML', 'Javascript']
+// var courses = ['Java', 'PHP', 'Ruby', 'HTML', 'Javascript']
 
-console.log(courses.includes('Java')) // true
-console.log(courses.includes('Java', 2)) // false
-console.log(courses.includes('Java', -2)) // false
-console.log(courses.includes('Java', -5)) // true
+// console.log(courses.includes('Java')) // true
+// console.log(courses.includes('Java', 2)) // false
+// console.log(courses.includes('Java', -2)) // false
+// console.log(courses.includes('Java', -5)) // true
 
