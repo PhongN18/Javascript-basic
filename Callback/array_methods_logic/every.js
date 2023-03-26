@@ -2,12 +2,13 @@
 
 Array.prototype.every2 = function (callback) {
     if (typeof callback === 'function') {
-        var arrayLength = this.length
         var result = true
-        for (var i = 0; i < arrayLength; i++) {
-            result = callback(this[i], i, this)
-            if (!result) {
-                return result
+        for (var index in this) {
+            if (this.hasOwnProperty(index)) {
+                result = callback(this[index], index, this)
+                if (!result) {
+                    return result
+                }
             }
         }
         return result
@@ -23,15 +24,18 @@ var courses = [
     { id: 6, name: 'Ruby', coin: 120 },
 ]
 
-// var free = courses.every(function (course, index) {
-//     console.log(index) 
-//     return course.coin < 500;
-// })
-// console.log(free)
+courses.length = 10
+
+var free = courses.every(function (course, index) {
+    console.log(index) 
+    return course.coin < 1000;
+})
+console.log(free)
 
 var free2 = courses.every2(function (course, index, array) {
     console.log(index) 
-    console.log(array)
     return course.coin < 1000;
 })
 console.log(free2)
+
+console.log(courses)
