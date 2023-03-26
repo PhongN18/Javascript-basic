@@ -2,13 +2,14 @@
 
 Array.prototype.some2 = function (callback) {
     if (typeof callback === 'function') {
-        var arrayLength = this.length
         var result = false
 
-        for (var i = 0; i < arrayLength; i++) {
-            result = callback(this[i], i, this)
-            if (result) {
-                return result
+        for (var index in this) {
+            if (this.hasOwnProperty(index)) {
+                result = callback(this[index], index, this)
+                if (result) {
+                    return result
+                }
             }
         }
         return result

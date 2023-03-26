@@ -2,13 +2,14 @@
 
 Array.prototype.filter2 = function (callback) {
     if (typeof callback === 'function') {
-        var arrayLength = this.length
         var result = []
 
-        for (var i = 0; i < arrayLength; i++) {
-            var condition = callback(this[i], i, this)
-            if (condition) {
-                result.push(this[i])
+        for (var index in this) {
+            if (this.hasOwnProperty(index)) {
+                var condition = callback(this[index], index, this)
+                if (condition) {
+                    result.push(this[index])
+                }
             }
         }
         return result
@@ -25,17 +26,18 @@ var courses = [
     { id: 6, name: 'Ruby', coin: 120 },
 ]
 
-// var filter = courses.filter(function (course, index) {
-//     console.log(index)
-//     return course.name === 'PHP';
-// })
-// console.log(filter)
+courses.length = 10
 
-// var filter2 = courses.filter2(function (course, index) {
-//     console.log(index)
-//     return course.name === 'PHP';
-// })
-// console.log(filter2)
+var filter = courses.filter(function (course, index) {
+    console.log(index)
+    console.log(typeof index)
+    return course.coin < 400;
+})
+console.log(filter)
 
-var newCourses = courses.map(function () {});
-console.log(newCourses)
+var filter2 = courses.filter2(function (course, index) {
+    console.log(index)
+    console.log(typeof index)
+    return course.coin < 400;
+})
+console.log(filter2)
