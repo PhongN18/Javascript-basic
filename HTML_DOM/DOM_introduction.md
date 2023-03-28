@@ -21,6 +21,14 @@
 ## Document object
 - Represent the whole website
 
+## ClassList
+
+## DOM CSS
+
+## DOM Events
+- Attribute events
+- Assign events using the element node
+
 --------------------------------------------------
 
 # Javascript

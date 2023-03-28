@@ -1,3 +1,6 @@
+<!-- Change back to html file when needed -->
+<!-- General HTML DOM index file -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,12 +50,25 @@
     </h1>
      -->
 
-     <div class="box box-2">
+    <!-- <div class="box box-2">
         <h1>abcxyz</h1>
-     </div>
+    </div> -->
 
+    <h1>
+        <span>Heading 1</span>
+    </h1>
+    <h1>
+        <span>Heading 2</span>
+    </h1>
+    <h1>
+        <span>Heading 3</span>
+    </h1>
+
+    <!-- this returns the node itself -->
 
 </body>
-<script src="./DOM_2.js"></script>
+<script src="./DOM_events.js"></script>
 
 </html>
+
+<!-- Change back to html file when needed -->
