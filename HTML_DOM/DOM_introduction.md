@@ -2,9 +2,18 @@
 - Document Object Model
 
 ## Thành phần 
-- Element (a, h1, head, body, ...)
-- Attribute (href, class, src, ...)
-- Text (literal text, <h1>This part is text</h1>)
+### Element (a, h1, head, body, ...)
+- getElementByID, querySelector --> return 1 element
+- getElementsByClassName, getElementsByTagName, querySelectorAll 
+--> return HTMLCollection or NodeList ~ array
+
+### Attribute (href, class, src, ...)
+- setAttribute, getAttribute
+- element.attribute = value
+
+### Text (literal text, <h1>This part is text</h1>)
+- element.innerText
+- element.textContent
 
 ## Node
 - Could be elements, attributes or texts
