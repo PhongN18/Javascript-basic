@@ -41,3 +41,8 @@ promise
 - Sử dụng promise:
 + .then(callback function) - được thực thi khi promise resolve()
 + .catch(callback function) - được thực thi khi promise reject()
+
+## Methods
+- Promise.resolve
+- Promise.reject
+- Promise.all
