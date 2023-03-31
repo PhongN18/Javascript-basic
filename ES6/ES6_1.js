@@ -126,32 +126,3 @@
 
 // console.log(phpCourse)
 // console.log(jsCourse.getName())
-
-
-// Default parameter values
-// thường sử dụng với những tham số không bắt buộc
-
-// function logger(log) {
-//     if (typeof log === 'undefined') {
-//         log = 'Default value'
-//     }
-//     console.log(log)
-// }
-
-// ES6
-// function logger (log = 'Default value') {
-//     console.log(log)
-// }
-
-// logger(undefined) // Default value
-// logger('bla bla bla') // bla bla bla
-
-// function method(log, type = 'log') {
-//     console[type](log)
-// }
-
-// method('message') // console.log('message')
-// method('message', 'error') // console.error('message')
-
-
-// Enhanced object literals
