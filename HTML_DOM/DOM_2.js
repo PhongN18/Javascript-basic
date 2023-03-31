@@ -3,6 +3,11 @@ var boxElement = document.querySelector('.box')
 
 // boxElement.style.backgroundColor = 'green'
 
+// Element có thể được edit trên trình duyệt
+// Nhưng không lưu (F5 về như cũ)
+Object.assign(boxElement, {
+    contentEditable: true
+})
 
 // assign inline style to element
 // Object.assign(boxElement.style, {
