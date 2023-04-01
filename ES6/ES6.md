@@ -62,4 +62,11 @@ Line3`
 + rest thường đại diện cho các tham số truyền vào function khi khởi tạo
 + spread đại diện cho đối số truyền vào function khi được gọi
 
-## Tagged template literals
+## Tagged template literals (3. 31 - 59)
+- Best to look at the example in ES6_3.js
+
+## Modules (3. 62 - 71)
+- Phải thêm type = "module"
+- Import / Export
+
+## Optional chaining (?.)
